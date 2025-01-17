@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner - Smart Parking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .welcome-message {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .pay-now-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .pay-now-btn:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome message and parking details -->
+    <div class="welcome-message">
+        <h1>Welcome to Smart Parking System</h1>
+        <p>Total Number of Slots: 5</p>
+        <p>Charge per Hour: ₹5</p>
+    </div>
+    <!-- UPI QR Code for Payment -->
+    <img src="upi-qrr.png" alt="Scan to Pay with UPI">
+    <p>Scan the QR code with your UPI app to make a payment.</p>
+    <script>
+        function openUPILink() {
+            // UPI link embedded for payment (optional, if you want to open UPI directly)
+            const upiLink = "upi://pay?pa=devikasharma9590@oksbi&pn=Devika%20Sharma&cu=INR";
+            // Redirect to UPI link
+            window.location.href = upiLink;
+        }
+    </script>
+</body>
+</html>
